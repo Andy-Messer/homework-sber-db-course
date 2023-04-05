@@ -1,7 +1,7 @@
 ### Установка MongoDB в Docker
 ```bash
 docker pull mongo
-ocker container run -d --name mongodb-hw -p 27017:27017 --network mipt-network mongodb:latest
+ocker container run -d --name mongodb-hw mongodb:latest
 docker exec -it mongodb-hw bash
 ```
 
