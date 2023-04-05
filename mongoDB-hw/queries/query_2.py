@@ -3,4 +3,6 @@ import pandas as pd
 
 client = pymongo.MongoClient()
 db = client.iris
-print(client.getCollectionNames())
+
+x = db.iris.delete_many({'Species': 'Iris-versicolor'})
+print(x.deleted_count, " documents deleted.")
